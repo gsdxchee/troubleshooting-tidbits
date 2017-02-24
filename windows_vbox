@@ -1,0 +1,13 @@
+If presented with only 32 bit guest versions but the host is a 64 bit OS:
+
+Virtualization Technologies (VTs) and Virtualization Technology for Directed I/O (VTd) Feature in the BIOS need to be enabled.
+
+If this does not work (not tested):
+turn windows features on or off
+Hyper-V
+This option might be conflicting with other Virtualization technology, disable this.
+
+
+Things to confirm:
+BIOS (VTs and VTd)
+OS is 64-bit
