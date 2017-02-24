@@ -1,0 +1,24 @@
+Default /etc/xinetd.d/tftp:
+
+service tftp
+{
+protocol = udp
+port = 69
+socket_type = dgram
+wait = yes
+user = nobody
+server = /usr/sbin/in.tftpd
+server_args = /var/lib/tftpboot
+disable = no
+}
+
+To help troubleshoot:
+tftp> connect I.P.A.D
+tftp> get FILE
+(to help with troubleshooting, FILE can exist or not exist, result should be instant)
+
+If it times out, try to reset tftpd on server:
+service xinetd restart
+
+Some log entries of activities might be found in:
+/var/log/messages
