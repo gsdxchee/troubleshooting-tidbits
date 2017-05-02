@@ -1,3 +1,10 @@
 Print only directories:
 ls -d */
 
+Bash function that takes parameters:
+vi ~/.bashrc
+md() {
+  md5sum *$1*
+}
+  
+  
