@@ -8,3 +8,6 @@ md() {
 }
   
   
+CLI to get external IP address:
+curl ipinfo.io/ip
+
