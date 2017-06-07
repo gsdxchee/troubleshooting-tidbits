@@ -1,0 +1,6 @@
+If during yum update, connection is lost, transactions could still be in queue.
+
+If you connect again and perform the yum update again, both versions will exist on the server (verifiable by rpm -qa | grep {PKGNAME}, yum history info {NUM}, one will show installed and the other @)
+
+yum install yum-utils
+yum-complete-transaction
