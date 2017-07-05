@@ -1,0 +1,11 @@
+How to hard code subs:
+Open video
+Video Output -> Change to H264, xvid, etc
+Filters -> Subtitles -> SSA/ASS/SRT
+
+
+Trouble using Subtitle Filter:
+SSA Error
+Cannot read_file for *.ssa*
+
+Use a shorter file name
