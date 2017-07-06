@@ -11,3 +11,53 @@ md() {
 CLI to get external IP address:
 curl ipinfo.io/ip
 
+
+
+CLI examples:
+
+$ curl ifconfig.co
+
+$ http -b ifconfig.co
+
+$ wget -qO- ifconfig.co
+
+$ fetch -qo- https://ifconfig.co
+
+Country lookup:
+
+$ http ifconfig.co/country
+
+City lookup:
+
+$ http ifconfig.co/city
+
+
+
+JSON output:
+
+$ http ifconfig.co/json
+{ 
+    "city": "City",
+    "country": "Country",
+    "hostname": "RDNS NAME",
+    "ip": "I.P.A.D",
+    "ip_decimal": ip_decimal
+}
+
+Setting the Accept header to application/json also works.
+Plain output:
+
+Always returns the IP address including a trailing newline, regardless of user agent.
+
+$ http ifconfig.co/ip
+I.P.A.D
+
+Testing port connectivity:
+
+$ http ifconfig.co/port/8080
+{
+    "ip": "I.P.A.D",
+    "port": 8080,
+    "reachable": false
+}
+
