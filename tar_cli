@@ -1,0 +1,3 @@
+tar -xcvf file.name.tar.gz file folder/
+
+--exclude=foldertoexclude
