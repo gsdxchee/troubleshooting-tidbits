@@ -1,0 +1,30 @@
+If presented with error about not installable from clean install:
+
+
+reading package list... done
+building dependendcy tree
+reading state info... done
+some packages could no be installed. This may mean you have requsted an impossible situation or you are using an unstable distrobution that some required packages have not yet been created or been moved out of incoming
+The following info may help resove your situation:
+
+The following packages have unmet dependencies:
+openssh-server : Depends: Libwrap0 (>= 7.6-4~) but it is not installable
+E:unable to corect problems you have held broken packages. 
+
+Check /etc/apt/sources.list
+
+#
+
+# deb cdrom:[Debian GNU/Linux 7.11.0 _Wheezy_ - Official amd64 NETINST Binary-1 20160605-17:36]/ wheezy main
+
+#deb cdrom:[Debian GNU/Linux 7.11.0 _Wheezy_ - Official amd64 NETINST Binary-1 20160605-17:36]/ wheezy main
+
+deb http://ftp.us.debian.org/debian/ wheezy main
+deb-src http://ftp.us.debian.org/debian/ wheezy main
+
+deb http://security.debian.org/ wheezy/updates main
+deb-src http://security.debian.org/ wheezy/updates main
+
+# wheezy-updates, previously known as 'volatile'
+deb http://ftp.us.debian.org/debian/ wheezy-updates main
+deb-src http://ftp.us.debian.org/debian/ wheezy-updates main
