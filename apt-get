@@ -3,8 +3,40 @@ If issues with expired archive:
 vi /etc/apt/apt.conf
 Acquire::Check-Valid-Until false;
 
+For Debian 5:
+deb http://archive.debian.org/debian-archive/debian/ lenny main contrib non-free
+deb http://archive.debian.org/debian-security/ lenny/updates main contrib non-free
 
 For Debian 6:
 deb http://archive.debian.org/debian squeeze main
 deb http://archive.debian.org/debian squeeze-lts main
 
+For Debian 7:
+deb http://ftp.us.debian.org/debian/ wheezy main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ wheezy main contrib non-free
+
+deb http://security.debian.org/ wheezy/updates main
+deb-src http://security.debian.org/ wheezy/updates main
+
+deb http://ftp.us.debian.org/debian/ wheezy-updates main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ wheezy-updates main contrib non-free
+
+For Debian 8:
+deb http://ftp.us.debian.org/debian/ jessie main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ jessie main contrib non-free
+
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb-src http://security.debian.org/ jessie/updates main contrib non-free
+
+deb http://ftp.us.debian.org/debian/ jessie-updates main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ jessie-updates main contrib non-free
+
+For Debian 9:
+deb  http://deb.debian.org/debian stretch main
+deb-src  http://deb.debian.org/debian stretch main
+
+deb  http://deb.debian.org/debian stretch-updates main
+deb-src  http://deb.debian.org/debian stretch-updates main
+
+deb http://security.debian.org/ stretch/updates main
+deb-src http://security.debian.org/ stretch/updates main
