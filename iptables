@@ -1,3 +1,6 @@
+To use iptables-save:
+apt-get install iptables-persistent
+
 iptables-save > iptables-save-output
 
 # list the rules with line numbers
