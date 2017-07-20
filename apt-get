@@ -1,0 +1,10 @@
+If issues with expired archive:
+
+vi /etc/apt/apt.conf
+Acquire::Check-Valid-Until false;
+
+
+For Debian 6:
+deb http://archive.debian.org/debian squeeze main
+deb http://archive.debian.org/debian squeeze-lts main
+
