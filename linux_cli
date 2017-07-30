@@ -66,3 +66,25 @@ Using sort:
 Sorting file in place:
 sort file -o file
 sort file > new_file
+
+Using cut:
+
+Cutting tabs:
+By default, cut delimits on tabs:
+cut -f 2
+But:
+Ctrl-v + Tab
+cut -f2 -d'   ' file
+cut -f2 -d$'\t' file
+
+Multiple fields:
+Print columns 2 - 3:
+cut -f 2-3
+Print columns 2 - 3, 5:
+cut -f 2-3,5
+Print columns before 4:
+cut -f -4
+Print columns after 4 to end:
+cut -f 4-
+Print columns before 2, 4 - 5, 7 to end:
+cut -f -2,4-5,7-
