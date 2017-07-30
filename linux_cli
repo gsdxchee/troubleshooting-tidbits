@@ -61,3 +61,8 @@ $ http ifconfig.co/port/8080
     "reachable": false
 }
 
+Using sort:
+
+Sorting file in place:
+sort file -o file
+sort file > new_file
