@@ -1,0 +1,3 @@
+Migrating VM:
+qmrestore /path/to/vzdump-qemu-{VM #}-{date}.lzo {desired VM #}
+
