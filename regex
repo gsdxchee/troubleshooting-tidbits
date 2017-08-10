@@ -1,0 +1,10 @@
+^		Start of string
+$		End of string
+{...}	Quantifier {num}
+[...]	Characters/numbers
+(...)	Grouping of characters/numbers
+
+ab{2}c	abbc
+a[bB]c	abc, aBc
+a.c		abc, aac
+ab?c	ac, abc
