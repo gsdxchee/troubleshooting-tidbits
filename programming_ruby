@@ -1,0 +1,9 @@
+Strip to return a copy of the str with leading/trailing white space removed
+
+"    Hello    ".strip   #=> "Hello"   
+"\tworld\r\n".strip   #=> "world"
+
+Or using gsub
+
+string = string.gsub(/\r/," ")
+string = string.gsub(/\n/," ")
