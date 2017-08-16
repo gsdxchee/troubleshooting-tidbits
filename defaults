@@ -1,0 +1,7 @@
+Changing default editor:
+vi ~/.bash_profile
+export EDITOR=/usr/bin/vim
+
+To check defaults:
+set
+printenv
