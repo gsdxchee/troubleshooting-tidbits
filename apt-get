@@ -3,6 +3,13 @@ If issues with expired archive:
 vi /etc/apt/apt.conf
 Acquire::Check-Valid-Until false;
 
+Ways to download debian packages from mirrors:
+Debian:
+aptitude download {pkg name}
+RHEL/CentOS:
+yum install yum-utils
+yumdownloader {pkgname}
+
 For Debian 5:
 deb http://archive.debian.org/debian-archive/debian/ lenny main contrib non-free
 deb http://archive.debian.org/debian-security/ lenny/updates main contrib non-free
