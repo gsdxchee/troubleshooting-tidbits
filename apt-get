@@ -7,6 +7,10 @@ Acquire::Check-Valid-Until false;
 Ways to download debian packages from mirrors:
 Debian:
 aptitude download {pkg name}
+Or:
+apt-get -d install {pkg name}
+deb file will be located in:
+/var/cache/apt/archives
 RHEL/CentOS:
 yum install yum-utils
 yumdownloader {pkg name}
