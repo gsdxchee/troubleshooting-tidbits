@@ -1,0 +1,9 @@
+To comment in perl:
+
+=begin comment
+This will be commented out
+Keep going
+And
+The way to end it is:
+=end comment
+=cut
