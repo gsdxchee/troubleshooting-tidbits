@@ -6,3 +6,10 @@ To cut last charater (ie new line):
 >>> teststring
 'teststring'
 
+Other ways to accomplish this:
+>>> 'teststring\n'.rstrip('\r\n')
+'teststring'
+
+>>> '\nteststring\n'.split()
+This will also strip out all white space and special characters
+
