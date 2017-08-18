@@ -1,0 +1,12 @@
+RHEL:
+vi /etc/sysconfigh/network-scripts/route-eth0
+10.0.0.0/24 via 10.0.0.2
+
+Debian:
+vi /etc/network/interfaces
+up route add -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.254
+
+
+CLI (non-persistent):
+ip route add 192.168.1.0/24 dev eth0
+
