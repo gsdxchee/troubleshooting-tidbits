@@ -1,0 +1,8 @@
+To cut last charater (ie new line):
+>>> teststring = "teststring\n"
+>>> teststring
+'teststring\n'
+>>> teststring = teststring[:-1]
+>>> teststring
+'teststring'
+
