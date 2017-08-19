@@ -3,10 +3,10 @@ apt-get install iptables-persistent
 
 iptables-save > iptables-save-output
 
-# list the rules with line numbers
+# List Rules with Line Numbers
 iptables -nL --line-numbers
 
-# insert a rule at line 5
+# Insert Rule at Line 5
 iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport 1000 -j ACCEPT
 iptables -I {chain} {line-number} -d {destination/mask} -s {source/mask} -p {tcp/udp} -i {interface} -j {ACCEPT/DROP}
 
@@ -14,8 +14,37 @@ iptables -I {chain} {line-number} -d {destination/mask} -s {source/mask} -p {tcp
 -m state --state NEW
 -m tcp --dport 1000
 
-# allow ssh connections from anywhere
+# Allow ssh connections from anywhere on eth0
 iptables -A INPUT -i eth0 -p tcp --dport 22 -j ACCEPT
 
-# drop all packages, deny all explicit, last rule in INPUT chain
+# Drop all packages, deny all explicit, last rule in INPUT chain
 iptables -A INPUT -j DROP
+
+# List rules by how to enter:
+iptables -S
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p tcp --dport 22 -j ACCEPT
+
+# List Specific Chain:
+iptables -S {table name ie INPUT}
+
+# Create table name:
+iptables -N {table name}
+
+# List Rules as Tables:
+iptables -L {table name}
+
+# Show Packet Counts:
+iptables -L {table name} -v
+
+# Reset Packet Counts:
+iptables -Z
+iptables -Z {table name}
+iptables -Z {table name} {line number}
+
+Note: By flushing a chain with a default policy of drop or deny, you will lose active remote connections
+
