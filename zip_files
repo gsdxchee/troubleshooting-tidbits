@@ -1,0 +1,7 @@
+If requires zip64:
+Get 7zip
+
+Debian:
+apt-get install p7zip-full
+
+7z x file.zip
