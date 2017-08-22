@@ -88,3 +88,13 @@ Print columns after 4 to end:
 cut -f 4-
 Print columns before 2, 4 - 5, 7 to end:
 cut -f -2,4-5,7-
+
+
+Diff folders:
+diff ~/1 ~2
+This will list all the differences in the base folder and file changes
+diff -r ~/1 ~/2
+This will list all the differences in all folders and file changes
+diff -rq ~/1 ~/2
+This will only list the files and if they differ in all folders
+
