@@ -17,3 +17,10 @@ To use command line argument:
 import sys
 for arg in sys.argv[1:]:
   print arg
+
+To check for length of command line arguments or set default:
+if len(sys.argv) < 3: # This requires 2 arguments, 1 for script, 2 for first arg, 3 for 2nd arg
+  num=3
+else:
+  num=int(sys.argv[2])
+
