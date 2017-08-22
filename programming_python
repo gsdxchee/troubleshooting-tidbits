@@ -13,3 +13,7 @@ Other ways to accomplish this:
 >>> '\nteststring\n'.split()
 This will also strip out all white space and special characters
 
+To use command line argument:
+import sys
+for arg in sys.argv[1:]:
+  print arg
