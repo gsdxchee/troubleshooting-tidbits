@@ -24,3 +24,13 @@ Highlight desired blocks
 I
 Changes desired
 Esc, Esc
+
+To search and replace:
+Global file:
+:%s/{find}/{replace}/g
+Range line 2 - 263 in file:
+:2,263 s/{find}/{replace}/g
+Global find with confirmation:
+%s/{find}/{replace}/gc
+(y/n/a/q/l/^E/^Y)
+yes/no/all/quit/last(change and stop)/scroll (Ctrl-e)/scroll (Ctrl-y)
