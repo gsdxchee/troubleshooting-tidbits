@@ -17,3 +17,10 @@ colorscheme darkblue
 colorscheme pablo
 colorscheme slate
 colorscheme torte
+
+To block visual edit:
+Ctrl + v
+Highlight desired blocks
+I
+Changes desired
+Esc, Esc
