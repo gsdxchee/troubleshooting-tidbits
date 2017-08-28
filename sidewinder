@@ -1,0 +1,11 @@
+cf interface query
+cf policy query
+cf iprange query
+cf subnet query
+cf ipaddr query
+cf netgroup query
+cf netmap query
+cf host query
+
+cf cluster status
+cf cluster query
