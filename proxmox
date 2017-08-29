@@ -10,3 +10,5 @@ qm
 Stopping VM:
 qm stop <vmid>
 
+Adding new HDD:
+Select IDE
