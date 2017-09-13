@@ -12,3 +12,11 @@ line vty 0 4
  transport input ssh
  
  
+crypto key generate
+
+To allow ssh to older version of switch:
+vi /etc/ssh/ssh_config
+  GSSAPIAuthentication yes
+  KexAlgorithms=diffie-hellman-group1-sha1
+
+
