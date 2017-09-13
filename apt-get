@@ -4,6 +4,10 @@ vi /etc/apt/apt.conf
 Acquire::Check-Valid-Until false;
 
 
+Clearing apt cache:
+apt-get clean
+
+
 Ways to download debian packages from mirrors:
 Debian:
 aptitude download {pkg name}
