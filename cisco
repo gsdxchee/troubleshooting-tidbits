@@ -20,3 +20,5 @@ vi /etc/ssh/ssh_config
   KexAlgorithms=diffie-hellman-group1-sha1
 
 
+Console Cable Pinout:
+12345678 <-> 87654321
