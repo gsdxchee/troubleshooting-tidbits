@@ -1,0 +1,9 @@
+Default:
+sysadmin
+PASS
+
+System can be used to ssh straight to device
+
+Factory reset:
+Scroll up until Factory Reset
+Default passcode 999999
