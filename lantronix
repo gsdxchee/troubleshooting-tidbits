@@ -7,3 +7,10 @@ System can be used to ssh straight to device
 Factory reset:
 Scroll up until Factory Reset
 Default passcode 999999
+
+ssh to device then:
+connect direct deviceport {num}
+
+Break sequence:
+ESC + A (shift + a)
+
