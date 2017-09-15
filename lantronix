@@ -14,3 +14,6 @@ connect direct deviceport {num}
 Break sequence:
 ESC + A (shift + a)
 
+show connections
+connect terminate {num}
+
