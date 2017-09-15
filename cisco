@@ -22,3 +22,24 @@ vi /etc/ssh/ssh_config
 
 Console Cable Pinout:
 12345678 <-> 87654321
+
+Disable time out:
+no exec-timeout
+Better way to do this:
+exec-timeout 0
+
+
+Password Recovery:
+Hold button for 3 - 5 seconds
+flash_init
+load_helper
+dir flash:
+rename flash:config.text flash:config.old
+boot
+n #Prompt to initial config
+enable
+rename flash:config.old flash:config.text
+copy flash:config.text run
+#Change password
+write
+reload
