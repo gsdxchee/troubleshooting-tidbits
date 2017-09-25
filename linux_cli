@@ -98,3 +98,8 @@ This will list all the differences in all folders and file changes
 diff -rq ~/1 ~/2
 This will only list the files and if they differ in all folders
 
+Other options for uniq:
+-d - Only print duplicates
+-c - Print out counts
+-i - Ignore case
+-s N - Skip N characters
