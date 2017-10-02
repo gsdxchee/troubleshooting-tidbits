@@ -10,10 +10,12 @@ Default passcode 999999
 
 ssh to device then:
 connect direct deviceport {num}
+Also works:
+c d d {num}
 
 Break sequence:
 ESC + A (shift + a)
 
 show connections
 connect terminate {num}
-
+c t {num}
