@@ -1,0 +1,7 @@
+Some examples of using tags:
+
+# Only remediate ssh
+ansible-playbook site.yml --tags="ssh"
+
+# Don't change SNMP or postfix
+ansible-playbook site.yml --skip-tags="postfix,mail,snmp"
