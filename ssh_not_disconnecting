@@ -1,0 +1,5 @@
+When an ssh session doesn't disconnect after reboot and requires broken pipe:
+
+apt-get install libpam-systemd
+apt-get install dbus
+reboot
