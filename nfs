@@ -1,0 +1,39 @@
+Installing NFS:
+yum install nfs-utils
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch         Version                 Repository     Size
+================================================================================
+Installing:
+ nfs-utils             x86_64       1:1.2.3-75.el6          RedBase       336 k
+Installing for dependencies:
+ keyutils              x86_64       1.4-5.el6               RedBase        39 k
+ libevent              x86_64       1.4.13-4.el6            RedBase        66 k
+ libgssglue            x86_64       0.1-11.el6              RedBase        23 k
+ libtirpc              x86_64       0.2.1-13.el6_9          RedBase        82 k
+ nfs-utils-lib         x86_64       1.1.5-13.el6            RedBase        71 k
+ python-argparse       noarch       1.2.1-2.1.el6           RedBase        48 k
+ rpcbind               x86_64       0.2.0-13.el6_9.1        RedBase        51 k
+
+Transaction Summary
+================================================================================
+Install       8 Package(s)
+
+Total download size: 716 k
+Installed size: 2.0 M
+
+vi /etc/exports
+/nfs  *(rw,sync)
+/nfs  192.168.1.0/24(rw,sync)
+/nfs  192.168.1.11(rw,sync)
+
+Iptables rules required:
+2049 TCP/UDP (nfs)
+111 TCP/UDP (rpcbind/sunrpc)
+MOUNTD_PORT="port" TCP/UDP
+STATD_PORT="port" TCP/UDP
+LOCKD_TCPPORT="port" TCP
+LOCKD_UDPPORT="port" UDP
+
