@@ -1,0 +1,42 @@
+For loop:
+for /l %%x in (1,1,100) do echo %%x
+This will echo %%x
+
+for /l %%x in (1,1,100) do (
+echo %%x
+notepad
+)
+This will echo %%x and open notepad
+
+taskkill /im notepad.exe
+This will kill all notepad.exe processes
+
+taskkill /f /im notepad.exe
+This will force kill all notepad.exe processes
+
+timeout 10
+This will wait 10 seconds
+
+pause
+This will prevent the window from closing after execution
+
+@echo off
+This will prevent displaying executing commands
+
+start notepad
+This will start notepad
+
+@start notepad
+This will prevent displaying executing commands for this single command
+
+netsh int ip set address "local area connection" static 192.168.1.10 255.255.255.0 192.168.1.1
+This will set IP address to static address 192.168.1.10/24 with gateway 192.168.1.1
+
+netsh interface ip set dns "Local Area Connection" static 8.8.8.8 primary
+This will set primary DNS server to 8.8.8.8
+
+netsh interface ip add dns "Local Area Connection" 8.8.4.4 index=2
+This will set secondary DNS server to 8.8.4.4
+
+ipconfig | findstr [0-9].\.
+This finds IP address information based on ipconfig
