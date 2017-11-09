@@ -43,3 +43,5 @@ copy flash:config.text run
 #Change password
 write
 reload
+
+clock set HH:MM:SS DD Mon YYYY
