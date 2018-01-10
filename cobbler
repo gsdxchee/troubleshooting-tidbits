@@ -1,1 +1,1 @@
-cobbler system find --name="cl*" | xargs -n1 --replace cobbler system report --name={} | grep "IP Address"
+cobbler system find --name="cl*" | xargs -n1 --replace cobbler system report --name={} | grep -E "^Name  |IP Address"
