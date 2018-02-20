@@ -1,0 +1,7 @@
+Multiple lines and joining:
+search for line/find via regex
+Shift + end to complete selection
+Then Ctrl + J to join
+
+Joins happen at selection + next line (eg bash)
+
