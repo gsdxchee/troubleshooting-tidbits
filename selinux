@@ -1,0 +1,11 @@
+grep AVC * | audit2allow
+grep AVC * | audit2why
+
+grep AVC * | audit2allow -m policy > policy.te
+
+grep AVC * | audit2allow -M policy
+
+semodule -i policy.pp
+
+semodule -l
+
