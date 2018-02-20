@@ -1,3 +1,5 @@
+yum install policycoreutils-python
+
 grep AVC * | audit2allow
 grep AVC * | audit2why
 
