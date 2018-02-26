@@ -8,7 +8,31 @@ Management:
 qm
 
 Stopping VM:
-qm stop <vmid>
+qm stop {vmid}
 
 Adding new HDD:
 Select IDE
+
+Listing all VMs:
+qm list
+
+qm list
+      VMID NAME                 STATUS     MEM(MB)    BOOTDISK(GB) PID
+     {vmid}{vmname}            {vmstatus}   {RAM}       {HDD}     {PID}
+
+Listing VM configuration:
+qm config {vmid}
+
+balloon: 5120
+bootdisk: ide0
+cores: 4
+ide0: local-lvm:vm-{vmid}-disk-1,backup=0,size=100G
+ide2: local:iso/debian-8.8.0-amd64-DVD-1.iso,media=cdrom
+memory: 10240
+name: {vmname}
+net0: bridge=vmbr0,e1000=00:00:00:00:00:00
+numa: 0
+ostype: l26
+smbios1: uuid=00000000-0000-0000-0000-000000000000
+sockets: 4
+
