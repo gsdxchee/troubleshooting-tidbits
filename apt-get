@@ -61,3 +61,8 @@ deb-src  http://deb.debian.org/debian stretch-updates main
 
 deb http://security.debian.org/ stretch/updates main
 deb-src http://security.debian.org/ stretch/updates main
+
+For Kali:
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+# For source package access, uncomment the following line
+# deb-src http://http.kali.org/kali kali-rolling main contrib non-free
