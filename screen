@@ -1,0 +1,8 @@
+
+screen -ls
+
+screen -r
+
+Ctrl + A
+D - detach
+
