@@ -1,0 +1,107 @@
+How to Ping:
+admin@pa1> ping source I.P.A.D host I.P.A.D
+
+How to SSH:
+admin@pa1> ssh source I.P.A.D host I.P.A.D
+
+Configuration:
+Adding Devices:
+Objects -> Addresses
+
+Adding Services:
+Objects -> Services
+
+Adding Policies:
+Policies -> Security
+
+Setting up HA:
+Device -> High Availability
+
+Setup -> Edit
+
+Documentation:
+admin@pa1> configure
+Entering configuration mode
+[edit]
+admin@pa1#
+  check      Check configuration status
+  commit     Commit current set of changes
+  copy       Copy a statement
+  delete     Delete a data element
+  edit       Edit a sub-element
+  exit       Exit from this level
+  find       Find CLI commands with keyword
+  load       Load configuration from disk
+  move       Move a node within an ordered collection
+  override   Override a template element
+  quit       Quit from this level
+  rename     Rename a statement
+  run        Run an operational-mode command
+  save       Save configuration to disk
+  set        Set a parameter
+  show       Show a parameter
+  top        Exit to top level of configuration
+  up         Exit one level of configuration
+  validate   Validate current set of changes
+
+admin@pa1# exit
+Exiting configuration mode
+admin@pa1>
+
+admin@pa1>
+  clear        Clear runtime parameters
+  configure    Manipulate software configuration information
+  debug        Debug and diagnose
+  delete       Remove files from hard disk
+  diff         local configuration diffs
+  exit         Exit this session
+  find         Find CLI commands with keyword
+  ftp          Use ftp to export files
+  grep         Searches file for lines containing a pattern match
+  less         Examine debug file content
+  ls           Examine debug file listing
+  ping         Ping hosts and networks
+  quit         Exit this session
+  request      Make system-level requests
+  schedule     schedule test jobs
+  scp          Use scp to import / export files
+  set          Set operational parameters
+  show         Show operational parameters
+  ssh          Start a secure shell to another host
+  tail         Print the last 10 lines of debug file content
+  target       management session target
+  tcpdump      capture packets on management interface
+  test         verify system settings with test cases
+  tftp         Use tftp to import / export files
+  traceroute   Print the route packets take to network host
+  view-pcap    Examine packet capture file content
+
+admin@pa1>
+
+admin@pa1> ssh
++ inet     Force to IPv4 destination
++ port     Port to connect to on the remote host
++ source   Source address for ssh session
++ v1       Force ssh to try protocol version 1 only
++ v2       Force ssh to try protocol version 2 only
+* host     Hostname or IP address of remote host
+
+admin@pa1> 
+
+admin@pa1> ping
++ bypass-routing    Bypass routing table, use specified interface
++ count             Number of requests to send (1..2000000000 packets)
++ do-not-fragment   Don't fragment echo request packets (IPv4)
++ inet6             Force to IPv6 destination
++ interval          Delay between requests (seconds)
++ no-resolve        Don't attempt to print addresses symbolically
++ pattern           Hexadecimal fill pattern
++ size              Size of request packets (0..65468 bytes)
++ source            Source address of echo request
++ tos               IP type-of-service value (0..255)
++ ttl               IP time-to-live value (IPv6 hop-limit value) (0..255 hops)
++ verbose           Display detailed output
+* host              Hostname or IP address of remote host
+
+admin@pa1> 
+
