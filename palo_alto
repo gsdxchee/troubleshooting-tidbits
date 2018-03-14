@@ -11,6 +11,9 @@ Commit saved config:
 admin@pa1> configure
 admin@pa1# commit
 
+Resetting system:
+admin@pa1> request restart system
+
 How to Ping:
 admin@pa1> ping source I.P.A.D host I.P.A.D
 
@@ -210,3 +213,55 @@ admin@pa1> show jobs
 > processed   Completed/active jobs
 
 admin@pa1> 
+
+admin@pa1> request
+> acknowledge                        Acknowledge alarm logs
+> anti-virus                         Perform anti-virus upgrade operations
+> authentication                     authentication
+> certificate                        Manage certificates
+> clear-commit-tasks                 Clear all commit tasks
+> commit-lock                        commit-lock
+> config-lock                        config-lock
+> content                            Perform content upgrade operations
+> data-filtering                     Perform data filtering related operations
+> determine-new-applications         Determine new applications in content
+> device-block-list                  Manage Device Block Lists
+> device-registration                Device registration process
+> dhcp                               Request to perform DHCP related actions
+> get-application-status             Get application status
+> get-disabled-applications          List disabled applications in content
+> global-protect-client              Perform GlobalProtect client package operations
+> global-protect-gateway             request to perform global-protect-gateway functions
+> global-protect-portal              request to perform global-protect-portal functions
+> global-protect-satellite           request to perform global-protect-satellite functions
+> high-availability                  Perform HA operations
+> hsm                                HSM operations
+> last-acknowledge-time              Last alarm acknowledgement time
+> license                            Perform license related operations
+> list-content-downloads             List content downloads
+> master-key                         Change masterkey
+> netstat                            Print network connections and statistics
+> password-change-history            Password History
+> password-hash                      Generate password hash
+> quota-enforcement                  Manually enforce disk quota enforcement for logs and pcaps
+> restart                            Restart the system or software modules
+> session-discard                    mark a session to be discarded
+> set-application-status-recursive   Set application status
+> shutdown                           Shutdown the system or software modules
+> stats                              Generate stats dump
+> support                            Technical support information
+> system                             Perform system-level operations
+> tech-support                       Generate tech support dump
+> url-filtering                      Perform URL filtering related operations
+> wf-private                         Perform WF-Private cloud upgrade operations
+> wildfire                           Perform wildfire upgrade operations
+
+admin@pa1>
+
+admin@pa1> request restart
+> dataplane   Restart dataplane software
+> software    Restart all system software
+> system      Reboot the system
+
+admin@pa1>
+
