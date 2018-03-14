@@ -9,3 +9,5 @@ cf host query
 
 cf cluster status
 cf cluster query
+
+cf policy modify name={name} disable=[yes/no]
