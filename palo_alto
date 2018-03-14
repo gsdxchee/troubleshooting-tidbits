@@ -42,6 +42,11 @@ admin@pa1> debug system maintenance-mode
 *look for
 Factory Reset
 
+Setting MGT IP Address:
+admin@pa1> configure
+admin@pa1# set deviceconfig system ip-address I.P.A.D
+
+
 Configuration:
 Adding Devices:
 Objects -> Addresses
@@ -269,4 +274,69 @@ admin@pa1> request restart
 > system      Reboot the system
 
 admin@pa1>
+
+admin@PA-3020# set deviceconfig
+> high-availability   high-availability configuration
+> setting             setting
+> system              system
+  <Enter>             Finish input
+
+admin@PA-3020# set deviceconfig system
++ ack-login-banner          Force Admins to Acknowledge Login Banner
++ authentication-profile    Authentication profile to use for non-local admins. Only RADIUS method is supported.
++ certificate-profile       profile for verifying client certificates
++ default-gateway           Default gateway
++ domain                    domain
++ domain-lookup-url         domain-lookup-url
++ fqdn-forcerefresh-time    Seconds for Periodic Timer to force refresh FQDN object entries
++ fqdn-refresh-time         Seconds for Periodic Timer to refresh expired FQDN object entries
++ hostname                  hostname
++ ip-address                IP address for the management interface
++ ip-address-lookup-url     ip-address-lookup-url
++ ipv6-address              IPv6 address for the management interface
++ ipv6-default-gateway      IPv6 Default gateway
++ locale                    system default locale
++ login-banner              login-banner
++ mtu                       Maximum Transmission Unit for the management interface
++ netmask                   IP netmask for the management interface
++ panorama-server           Panorama server (IP address or FQDN)
++ panorama-server-2         Panorama server 2 (IP address or FQDN)
++ secure-proxy-password     Secure Proxy password to use
++ secure-proxy-port         Port for secure proxy server
++ secure-proxy-server       Secure Proxy server to use
++ secure-proxy-user         Secure Proxy user name to use
++ server-verification       Verify update server identity
++ speed-duplex              Speed and duplex for the management interface
++ ssl-tls-service-profile   SSL TLS service profile
++ syslog-certificate        client certificate for syslog
++ timezone                  timezone
++ update-server             PaloAlto Networks update server
+> dns-setting               dns-setting
+> geo-location              Device geographic location
+> hsm-settings              hsm-settings
+> log-export-schedule       Schedule for exporting logs
+> log-link                  External log link
+> motd-and-banner           motd-and-banner
+> ntp-servers               ntp-servers
+> permitted-ip              permitted-ip
+> route                     route
+> service                   service
+> snmp-setting              snmp-setting
+> type                      Static/DHCP ip-allocation
+> update-schedule           Schedule for downloading/installing updates
+  <Enter>                   Finish input
+
+admin@PA-3020# set deviceconfig system ip
++ ip-address              IP address for the management interface
++ ip-address-lookup-url   ip-address-lookup-url
++ ipv6-address            IPv6 address for the management interface
++ ipv6-default-gateway    IPv6 Default gateway
+
+admin@PA-3020# set deviceconfig system ip
++ ip-address              IP address for the management interface
++ ip-address-lookup-url   ip-address-lookup-url
++ ipv6-address            IPv6 address for the management interface
++ ipv6-default-gateway    IPv6 Default gateway
+
+admin@PA-3020# set deviceconfig system ip-address
 
