@@ -1,8 +1,38 @@
+Show config:
+admin@pa1> show config running
+
+Validate config:
+admin@pa1> configure
+admin@pa1# validate {full/partial}
+admin@pa1# exit
+admin@pa1> show jobs pending
+
+Commit saved config:
+admin@pa1> configure
+admin@pa1# commit
+
 How to Ping:
 admin@pa1> ping source I.P.A.D host I.P.A.D
 
 How to SSH:
 admin@pa1> ssh source I.P.A.D host I.P.A.D
+
+CLI adding objects:
+admin@pa1> configure
+admin@pa1# set address {name} ip-netmask {I.P.A.D/mask} [description {description}]
+
+CLI deleting objects:
+admin@pa1> configure
+admin@pa1# delete address {name}
+
+Check for uncommited changes:
+admin@pa1> configure
+admin@pa1# check pending-changes
+
+yes
+[edit]
+admin@pa1# 
+
 
 Configuration:
 Adding Devices:
@@ -105,3 +135,78 @@ admin@pa1> ping
 
 admin@pa1> 
 
+admin@pa1# set
+> address                  address
+> address-group            address-group
+> application              application
+> application-filter       application-filter
+> application-group        application-group
+> application-tag          application-tag
+> captive-portal           captive-portal
+> deviceconfig             deviceconfig
+> dns-proxy                Assign DNS proxy parameters
+> email-scheduler          email-scheduler
+> external-list            external-list
+> global-protect           GlobalProtect
+> group-mapping            group-mapping
+> import                   Import predefined configured resources
+> mgt-config               mgt-config
+> network                  network configuration
+> pdf-summary-report       pdf-summary-report
+> profile-group            profile-group
+> profiles                 profiles
+> region                   region
+> report-group             report-group
+> reports                  reports
+> route                    route
+> rulebase                 rulebase
+> schedule                 schedule
+> service                  service
+> service-group            service-group
+> setting                  setting
+> shared                   shared
+> tag                      tag
+> threats                  threats
+> ts-agent                 ts-agent
+> url-admin-override       url-admin-override
+> url-content-types        url-content-types
+> user-id-agent            user-id-agent
+> user-id-agent-sequence   user-id-agent-sequence
+> user-id-collector        user-id-collector
+> vm-info-source           vm-info-source
+> zone                     zone
+  display-name             alphanumeric string [ 0-9a-zA-Z._-]
+
+admin@pa1# set
+
+admin@pa1# set address {name}
++ description   description
+> fqdn          fqdn
+> ip-netmask    ip-netmask
+> ip-range      ip-range
+> tag           tags for address object
+  <Enter>       Finish input
+
+admin@pa1# 
+
+admin@pa1> show config
+> audit                  Config audit information
+> candidate              Candidate configuration
+> diff                   Diff running and candidate configuration
+> merged                 pushed template and local config merge
+> pushed-shared-policy   Shared policy pushed to the device
+> pushed-template        Template pushed to the device
+> running                Running configuration
+> saved                  Saved configuration
+> synced                 Configuration last synchronized with HA peer
+> synced-diff            Diff remote configuration between HA peers
+
+admin@pa1> 
+
+admin@pa1> show jobs
+> all         All jobs
+> id          By id
+> pending     Pending jobs
+> processed   Completed/active jobs
+
+admin@pa1> 
