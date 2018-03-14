@@ -36,6 +36,11 @@ yes
 [edit]
 admin@pa1# 
 
+Factory Default:
+admin@pa1> debug system maintenance-mode
+*System reboots into maintenance-mode
+*look for
+Factory Reset
 
 Configuration:
 Adding Devices:
