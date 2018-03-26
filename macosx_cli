@@ -1,3 +1,9 @@
+To add alias to interface:
+ifconfig alias en0 192.168.2.2 255.255.255.0
+
+To remove alias from interface:
+ifconfig -alias en0 192.168.2.2
+
 To open finder window from terminal:
 open .
 
