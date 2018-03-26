@@ -4,3 +4,8 @@ If you connect again and perform the yum update again, both versions will exist 
 
 yum install yum-utils
 yum-complete-transaction
+
+
+Installing older kernels:
+yum install kernel-<version>-<revision>-<arch>
+Eg: yum install kernel-2.6.504-8.1.el6
