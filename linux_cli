@@ -94,3 +94,8 @@ Other options for uniq:
 Watch with color (if supported):
 watch --color -n1 python
 
+
+To limit rsync to bandwidth 750 kb/s:
+rsync -P --bwlimit=750 -e ssh {server}:/FOLDER/FILE
+-P provides --partial --progress
+
