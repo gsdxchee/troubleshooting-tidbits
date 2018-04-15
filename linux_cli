@@ -99,3 +99,11 @@ To limit rsync to bandwidth 750 kb/s:
 rsync -P --bwlimit=750 -e ssh {server}:/FOLDER/FILE
 -P provides --partial --progress
 
+
+Connecting via serial:
+minicom -s
+Esc to fire up connections (typical /dev/ttyS0, 115200)
+
+Ctrl-A + z for options
+Ctrl-A + x to quit
+
