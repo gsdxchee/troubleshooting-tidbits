@@ -1,0 +1,14 @@
+Default NEMS user
+nemsadmin/nemsadmin
+
+
+Setting up NEMS:
+sudo nems-init
+
+
+NEMS comes with DHCP enabled, preferred by developer.
+To disable DHCP:
+vi /etc/network/interfaces
+echo "denyinterfaces eth0" >> /etc/dhcpcd.conf
+
+
