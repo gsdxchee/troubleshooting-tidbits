@@ -1,3 +1,5 @@
 Cheap logging:
 echo "`date +%H%M%S` Logging!" >> /var/log/whatever
 
+Remove in place the last line in a file:
+sed -i '$ d' file.txt
