@@ -18,3 +18,5 @@ rm -f file.txt.tmp
 #4 (for large files)
 dd if=/dev/null of=<filename> bs=1 seek=$(echo $(stat --format=%s <filename> ) - $( tail -n1 <filename> | wc -c) | bc )
 
+Check if file is exists and is not size 0
+if [[ -f file && -s file ]]
