@@ -2,4 +2,18 @@ Cheap logging:
 echo "`date +%H%M%S` Logging!" >> /var/log/whatever
 
 Remove in place the last line in a file:
+#1
 sed -i '$ d' file.txt
+
+#2
+cp file.txt file.txt.tmp
+sed '$ d' file.txt.tmp > file.txt
+rm -f file.txt.tmp
+
+#3
+cp file.txt file.txt.tmp
+head -n -1 file.txt.tmp > file.txt
+rm -f file.txt.tmp
+
+#4 (for large files)
+dd if=/dev/null of=<filename> bs=1 seek=$(echo $(stat --format=%s <filename> ) - $( tail -n1 <filename> | wc -c) | bc )
