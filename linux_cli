@@ -99,6 +99,12 @@ To limit rsync to bandwidth 750 kb/s:
 rsync -P --bwlimit=750 -e ssh {server}:/FOLDER/FILE
 -P provides --partial --progress
 
+To rate limit wget to bandwidth 750 kb/s:
+wget --limit-rate 750k http://address.com/file
+
+To rate limit curl to bandwidth 750 kb/s:
+curl --limit-rate 750k http://address.com/file
+
 
 Connecting via serial:
 minicom -s
