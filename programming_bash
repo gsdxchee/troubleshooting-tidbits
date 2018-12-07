@@ -20,3 +20,13 @@ dd if=/dev/null of=<filename> bs=1 seek=$(echo $(stat --format=%s <filename> ) -
 
 Check if file is exists and is not size 0
 if [[ -f file && -s file ]]
+
+#To show current bash options set
+shopt -s
+
+#To make each bash shell append to history instead of overwriting
+vi ~/.bashrc
+shopt -s histappend
+
+# Immediately write history to file. Any additional commands should be appendedto PROMPT_COMMAND=
+PROMPT_COMMAND='history -a'
