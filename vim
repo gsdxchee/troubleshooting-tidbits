@@ -25,6 +25,12 @@ I
 Changes desired
 Esc, Esc
 
+To disable mouse visual edit:
+:set mouse-=a
+
+To disable mouse visual edit via ~/.vimrc
+set mouse-=a
+
 To search and replace:
 Global file:
 :%s/{find}/{replace}/g
