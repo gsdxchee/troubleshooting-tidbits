@@ -1,0 +1,9 @@
+
+vi ~/.ssh/config
+
+Host {host}
+  User {user}
+
+vi ~/.ssh/knownhosts
+
+/etc/ssh/sshd_config
