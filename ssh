@@ -7,3 +7,9 @@ Host {host}
 vi ~/.ssh/knownhosts
 
 /etc/ssh/sshd_config
+
+To ssh to load balanced appliance:
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null {host}
+
+StricthostKeyChecking=no will ignore if a key matches or not
+UserKnownHostsFile=/dev/null will send all new entries into dev null to prevent new entries from entering conflict
