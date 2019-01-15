@@ -1,5 +1,9 @@
 Archive locations:
 
 CentOS:
-
 https://archive.kernel.org/centos-vault/
+
+Debian:
+https://www.debian.org/releases/squeeze/debian-installer/ (6.10)
+https://www.debian.org/releases/wheezy/debian-installer/ (7.11)
+https://www.debian.org/releases/jessie/debian-installer/ (8.11)
