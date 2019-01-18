@@ -11,6 +11,11 @@ Commit saved config:
 admin@pa1> configure
 admin@pa1# commit
 
+Exporting config:
+admin@pa1> scp export configuration from running-config.xml to root@{I.P.A.D}:{name}.xml
+HA:
+admin@pa1> scp export configuration from running-config.xml source {I.P.A.D} to root@{I.P.A.D}:{name}.xml
+
 Resetting system:
 admin@pa1> request restart system
 
@@ -275,13 +280,13 @@ admin@pa1> request restart
 
 admin@pa1>
 
-admin@PA-3020# set deviceconfig
+admin@pa1# set deviceconfig
 > high-availability   high-availability configuration
 > setting             setting
 > system              system
   <Enter>             Finish input
 
-admin@PA-3020# set deviceconfig system
+admin@pa1# set deviceconfig system
 + ack-login-banner          Force Admins to Acknowledge Login Banner
 + authentication-profile    Authentication profile to use for non-local admins. Only RADIUS method is supported.
 + certificate-profile       profile for verifying client certificates
@@ -326,17 +331,11 @@ admin@PA-3020# set deviceconfig system
 > update-schedule           Schedule for downloading/installing updates
   <Enter>                   Finish input
 
-admin@PA-3020# set deviceconfig system ip
+admin@pa1# set deviceconfig system ip
 + ip-address              IP address for the management interface
 + ip-address-lookup-url   ip-address-lookup-url
 + ipv6-address            IPv6 address for the management interface
 + ipv6-default-gateway    IPv6 Default gateway
 
-admin@PA-3020# set deviceconfig system ip
-+ ip-address              IP address for the management interface
-+ ip-address-lookup-url   ip-address-lookup-url
-+ ipv6-address            IPv6 address for the management interface
-+ ipv6-default-gateway    IPv6 Default gateway
-
-admin@PA-3020# set deviceconfig system ip-address
+admin@pa1# set deviceconfig system ip-address
 
