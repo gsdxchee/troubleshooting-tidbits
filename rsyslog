@@ -36,3 +36,9 @@ vi /etc/rsyslog.conf
 
 service rsyslog start
 chkconfig rsyslog on
+
+To send audit logs:
+vi /etc/audisp/plugins.d/syslog.conf
+active = yes
+
+service rsyslog start
