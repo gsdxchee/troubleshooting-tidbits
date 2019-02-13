@@ -1,6 +1,11 @@
 Migrating VM:
 qmrestore /path/to/vzdump-qemu-{VM #}-{date}.lzo {desired VM #}
 
+Backing up VM:
+#Ensure "No backup" is not checked
+vzdump {vmid}
+Backup location is /var/lib/vz/dump
+
 ISO location:
 /var/lib/vz/template/iso/
 
