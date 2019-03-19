@@ -37,3 +37,6 @@ STATD_PORT="port" TCP/UDP
 LOCKD_TCPPORT="port" TCP
 LOCKD_UDPPORT="port" UDP
 
+Services that need to be running:
+nfs
+rpcbind
